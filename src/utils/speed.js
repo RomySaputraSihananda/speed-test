@@ -1,10 +1,9 @@
 const runSpeedTest = async () => {
-  const fileSizeInMB = 10;
+  const fileSizeInMB = 1;
   const fileUrl = "https://pbs.twimg.com/media/F7u3iB-boAAzYT9.jpg";
 
-  const startTime = new Date().getTime();
-
   try {
+    const startTime = new Date().getTime();
     const response = await fetch(fileUrl);
     const data = await response.arrayBuffer();
     const endTime = new Date().getTime();

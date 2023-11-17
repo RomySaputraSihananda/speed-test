@@ -12,7 +12,7 @@ class App extends React.Component {
   handleSpeed = async () => {
     const speed = await speedtest();
     console.log(speed);
-    this.setState({ speed });
+    // this.setState({ speed });
   };
 
   render = () => {
@@ -23,7 +23,6 @@ class App extends React.Component {
         <h1>Speed Test</h1>
 
         <button onClick={this.handleSpeed}>Test dong</button>
-
         {speed && (
           <div>
             <p>download : {speed.download}</p>
